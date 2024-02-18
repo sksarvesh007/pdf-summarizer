@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from transformers import pipeline
 import PyPDF2
-
+import gunicorn
 app = Flask(__name__)
 
 @app.route('/')
